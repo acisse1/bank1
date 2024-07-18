@@ -1,0 +1,27 @@
+spring:
+   application:
+      name: bank1
+      
+   datasource:
+      url: jdbc:mysql://localhost:3306/bank1
+      username: bank1
+      password: bank1
+      
+   jpa:
+      hibernate:
+         ddl-auto: update
+         dialect: org.hibernate.dialect.MySQL8Dialect
+      show-sql: true 
+      defer-datasource-initialization: true
+     
+   sql:
+      init:
+         mode: always
+         
+logging:
+   level:
+      root: info
+      bank: debug
+     
+        
+
